@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_bg"
+    tools:context=".QuizActivity"
+    android:id="@+id/sandu_irina_quiz">
+
+    <ImageView
+        android:id="@+id/sandu_irina_img_question"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/question"
+        app:layout_constraintBottom_toTopOf="@id/sandu_irina_quiz_tv_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sandu_irina_quiz_tv_progress"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/sandu_irina_quiz_tv_progress"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:shadowColor="@color/taupe"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/progress_0_10"
+        android:textAlignment="center"
+        android:textColor="@color/taupe"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/sandu_irina_quiz_tv_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sandu_irina_quiz_tv_question"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_text"
+        android:gravity="center"
+        android:text="@string/select_the_correct_character_for"
+        android:textColor="@color/purple_haze"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/sandu_irina_quiz_opt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sandu_irina_quiz_tv_progress" />
+
+    <TextView
+        android:id="@+id/sandu_irina_quiz_tv_letter"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/undinaru"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/sandu_irina_quiz_opt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sandu_irina_quiz_tv_question"
+        app:layout_goneMarginBottom="15dp"
+        app:layout_goneMarginTop="15dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sandu_irina_quiz_opt1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_btn2"
+        android:text="@string/button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sandu_irina_quiz_tv_letter" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sandu_irina_quiz_opt2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_btn2"
+        android:text="@string/button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sandu_irina_quiz_opt1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sandu_irina_quiz_opt3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_btn2"
+        android:text="@string/button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sandu_irina_quiz_opt2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

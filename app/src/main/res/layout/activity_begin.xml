@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="53dp"
+    tools:layout_editor_absoluteY="35dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quiz_bg"
+        tools:context=".BeginActivity">
+
+        <ImageView
+            android:id="@+id/begin_img_kf"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/korean_flag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sandu_irina_begin_tv_titlu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/undinaru"
+            android:text="@string/korean_letters_name_and_design"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/begin_img_kf"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sandu_irina_begin_tv_intro"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/undinaru"
+            android:text="@string/begin_intro"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/begin_img_kf" />
+
+        <TextView
+            android:id="@+id/sandu_irina_begin_tv_cons"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/undinaru"
+            android:text="@string/consonants"
+            android:textColor="@color/taupe"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sandu_irina_begin_tv_intro" />
+
+        <ImageView
+            android:id="@+id/sandu_irina_img_cons"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/hangul_c"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sandu_irina_begin_tv_cons" />
+
+        <TextView
+            android:id="@+id/sandu_irina_begin_tv_vowels"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/undinaru"
+            android:text="@string/vowels"
+            android:textColor="@color/taupe"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sandu_irina_img_cons" />
+
+        <ImageView
+            android:id="@+id/sandu_irina_img_vowels"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/hangul_v"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sandu_irina_begin_tv_vowels" />
+
+        <TextView
+            android:id="@+id/sandu_irina_begin_tv_vcomb"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/undinaru"
+            android:text="Vowel Combinations:"
+            android:textColor="@color/taupe"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sandu_irina_img_vowels" />
+
+        <ImageView
+            android:id="@+id/sandu_irina_img_vcomb"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/hangul_v"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sandu_irina_begin_tv_vcomb" />
+        <Button
+            android:id="@+id/sandu_irina_home_btn_done"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_btn"
+            android:text="Done"
+            android:fontFamily="@font/undinaru"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sandu_irina_img_vcomb" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
